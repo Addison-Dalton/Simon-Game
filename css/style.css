@@ -1,0 +1,139 @@
+/*controls the width of the container for different screens*/
+@media only screen and (max-width: 568px) {
+  .container {
+    margin-top:50px;
+    box-shadow: 0px 0px 10px black;
+    width:350px;
+    height:350px;
+  }
+  #title{
+    margin:14px 0px 0px 0px;
+    font-size:30px;
+  }
+  #output-screen{
+    font-size:20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin-top:50px;
+    box-shadow: 0px 0px 10px black;
+    width:425px;
+    height:425px;
+  }
+  #output-screen{
+    font-size:28px;
+  }
+}
+/*screen control end*/
+/*various classes*/
+body{
+  background-color:grey;
+}
+
+.no-margin{
+  margin:0px;
+}
+
+.top-padding{
+  padding-top:4px;
+}
+
+
+.container{
+  position:relative;
+  align:middle;
+  text-align:center;
+  border-radius:100%;
+}
+
+/*various classes end*/
+
+/*classes for outer buttons*/
+.outer-button{
+  position:absolute;
+  height:50%;
+  width:50%;
+  border:solid #252626 5px;
+  z-index:1;
+}
+#red-button{
+  top:0;
+  left:0;
+  background-color:darkRed;
+  border-radius:100% 0 0 0;
+}
+
+#green-button{
+  top:0;
+  right:0;
+  background-color:darkGreen;
+  border-radius:0 100% 0 0;
+}
+#yellow-button{
+  bottom:0;
+  left:0;
+  background-color:#bcbf00;
+  border-radius: 0 0 0 100%;
+}
+#blue-button{
+  bottom:0;
+  right:0;
+  background-color:darkBlue;
+  border-radius: 0 0 100% 0;
+}
+/*classes for outer buttons end*/
+
+/*classes for inner area*/
+.inner-circle{
+  top:25%;
+  left:25%;
+  position:absolute;
+  background-color:white;
+  height:50%;
+  width:50%;
+  border-radius:100%;
+  border:solid #252626 10px;
+  z-index:2;
+}
+#title{
+  font-family:'Roboto', sans-serif;
+}
+
+#output-screen{
+  margin: 0 auto;
+  padding-bottom:3px;
+  width:80%;
+  color: #ff2828;
+  background-color: #840c06;
+  border-radius:4px;
+  border:solid #636363 2px;
+  font-family:'VT323', monospace;
+}
+
+/*start/reset and strict button*/
+#start-btn{
+  width:20px;
+  height:20px;
+  background-color:red;
+  outline:none;
+  border:none;
+  border-radius:50%;
+  box-shadow: 0px 2px 2px #8e0505;
+}
+#start-btn:active{
+  background-color:#ff4c4c;
+  margin:1px;
+}
+
+#strict-btn{
+  width:20px;
+  height:20px;
+  background-color:#c6c433;
+  outline:none;
+  border:none;
+  border-radius:50%;
+  box-shadow: 0px 2px 2px #a0a513;
+}
+/*start/reset and strict button end*/
+/*classes for inner area end*/
